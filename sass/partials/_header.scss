@@ -1,0 +1,137 @@
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(201, 204, 0) !important;
+}
+
+.container-fluid {
+    max-width: 1080px;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+.header {
+    background-color: rgb(201, 204, 0);
+    padding: 20px;
+    height: 125px;
+    margin: 0%;
+    font-size: 1em;
+
+&__nav {
+    max-width: 1080px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+     display: flex;
+     justify-content: left;
+     flex-basis: 25%;
+}
+
+    &__ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-basis: 50%;
+     font-family: 'Ubuntu Mono', monospace;
+}
+
+}
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: rgb(201, 204, 0) !important;
+    }
+    
+    .container-fluid {
+        max-width: 1080px;
+    }
+    
+    #navbarNav {
+        justify-content: end;
+    }
+    
+    .header {
+        background-color: rgb(201, 204, 0);
+        padding: 20px;
+        height: 125px;
+        margin: 0%;
+        font-size: 1em;
+    
+    &__nav {
+        max-width: 1080px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    
+        &__logo {
+         display: flex;
+         justify-content: left;
+         flex-basis: 25%;
+    }
+    
+        &__ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-basis: 50%;
+         font-family: 'Ubuntu Mono', monospace;
+    }
+    
+    }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: rgb(201, 204, 0) !important;
+    }
+    
+    .container-fluid {
+        max-width: 1080px;
+    }
+    
+    #navbarNav {
+        justify-content: end;
+    }
+    
+    .header {
+        background-color: rgb(201, 204, 0);
+        padding: 20px;
+        height: 125px;
+        margin: 0%;
+        font-size: 1em;
+    
+    &__nav {
+        max-width: 1080px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    
+        &__logo {
+         display: flex;
+         justify-content: left;
+         flex-basis: 25%;
+    }
+    
+        &__ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-basis: 50%;
+         font-family: 'Ubuntu Mono', monospace;
+    }
+    
+    }
+    }
+}
+*/

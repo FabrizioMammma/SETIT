@@ -1,0 +1,39 @@
+/*Normalize*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/*Globales*/
+
+.body {
+    width: auto;
+    background-image: url(../assets/images/bgimage3.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    color: white !important
+}
+
+.ul__item {
+    text-decoration: none;
+}

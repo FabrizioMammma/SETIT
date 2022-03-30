@@ -1,129 +1,17 @@
-/*Normalize
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62, 5%;
-}
-
-/*Variables
-:root {
-    --principal: rgb(201, 204, 0);
-}
-
-/*Globales
-
-.body {
-    width: auto;
-    background-image: url(../images/bgimage3.jpg);
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-ul {
-    list-style-type: none;
-    display: inline-block;
-}
-
-a {
-    color: white !important
-}
-
-.ul__item {
-    text-decoration: none;
-}
-
-/*Header
-.bg-light {
-    --bs-bg-opacity: 1;
-    background-color: rgb(201, 204, 0) !important;
-}
-
-.container-fluid {
-    max-width: 1080px;
-}
-
-#navbarNav {
-    justify-content: end;
-}
-
-.header {
-    background-color: rgb(201, 204, 0);
-    padding: 20px;
-    height: 125px;
-    margin: 0%;
-    font-size: 1em;
-    ;
-}
-
-.header__nav {
-    max-width: 1080px;
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__nav__logo {
-    display: flex;
-    justify-content: left;
-    flex-basis: 25%;
-}
-
-.header__nav__ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-basis: 50%;
-    font-family: 'Ubuntu Mono', monospace;
-}*/
-
-
-
-/*Main
 .main {
     height: 75vh;
     display: flex;
     padding: 20px;
 
-}
 
-.main--contacto {
-    justify-content: center;
-    justify-content: space-around;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-
-}
-
-.main__section--contacto {
-    display: flex;
-    flex-direction: column;
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.main__section {
+&__section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     max-width: 1080px;
     margin: 0 auto;
-}
 
-.main__section__h1 {
+&__h1 {
     display: flex;
     max-width: 1080px;
     margin: 0 auto;
@@ -134,7 +22,7 @@ a {
 
 }
 
-.main__section__p {
+&__p {
     display: flex;
     justify-content: center;
     max-width: 1080px;
@@ -145,174 +33,101 @@ a {
     font-family: 'Ubuntu Mono', monospace;
 
 }
+&__a {
+    border: 2px solid #b8af37;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #b8af37;
+    border-radius: 6px;
+    display: flex;
+    flex-basis: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.3em;
+    padding: .8rem;
+
+&:hover {
+    background-color: rgb(201, 204, 0);
+    opacity: 75%;
+}
+}
+}
+}
 
 .divdea {
     display: flex;
 }
 
-.div {
-    display: flex;
-    max-width: 1080x;
-    margin: 0 auto;
-    flex-direction: row;
 
-}
-
-.main__section__a {
-    border: 2px solid #b8af37;
-    text-decoration: none;
-    font-weight: 400;
-    color: #ffffff;
-    background-color: #b8af37;
-    border-radius: 6px;
-    display: flex;
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.3em;
-    padding: .8rem;
-    flex-basis: 10%;
-}
-
-.main__section__a:hover {
-    background-color: rgb(201, 204, 0);
-    opacity: 75%;
-}
-
-.main__form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-}
-
-
-
-
-/*Footer
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "footer__divh footer__diva"
-    ;
-
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1080px;
-}
-
-.footer__divh {
-    display: grid;
-    text-align: center;
-    align-self: center;
-    color: #ffffff;
-    grid-area: footer__divh;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-.footer__diva {
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    align-self: center;
-    justify-content: space-between;
-    grid-area: footer__diva;
-}
-
-.footer__gmail {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-
-}
 
 @media screen and (max-width: 1200px) {
-
-    /*Header
     .bg-light {
         --bs-bg-opacity: 1;
         background-color: rgb(201, 204, 0) !important;
     }
-
+    
     .container-fluid {
         max-width: 1080px;
     }
-
+    
     #navbarNav {
         justify-content: end;
     }
-
+    
     .header {
         background-color: rgb(201, 204, 0);
         padding: 20px;
         height: 125px;
         margin: 0%;
         font-size: 1em;
-    }
-
-    .header__nav {
+    
+    &__nav {
         max-width: 1080px;
         margin: 0 auto;
         align-items: center;
         display: flex;
         justify-content: space-between;
+    
+        &__logo {
+         display: flex;
+         justify-content: left;
+         flex-basis: 25%;
     }
-
-    .header__nav__logo {
-        display: flex;
-        justify-content: left;
-        flex-basis: 25%;
+    
+        &__ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-basis: 50%;
+         font-family: 'Ubuntu Mono', monospace;
     }
-
-    .header__nav__ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-basis: 50%;
-        font-family: 'Ubuntu Mono', monospace;
+    
     }
-
-    /*Main
+    }
     .main {
         height: 75vh;
         display: flex;
         padding: 20px;
-    }
-
-    .main--contacto {
-        justify-content: center;
-        justify-content: space-around;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .main__section--contacto {
-        display: flex;
-        flex-direction: column;
-        max-width: 1080px;
-        margin: 0 auto;
-    }
-
-    .main__section {
+    
+    
+    &__section {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         max-width: 1080px;
         margin: 0 auto;
-    }
-
-    .main__section__h1 {
+    
+    &__h1 {
         display: flex;
         max-width: 1080px;
         margin: 0 auto;
         color: white;
         font-size: 1.8em;
         font-family: 'Ubuntu Mono', monospace;
+    
+    
     }
-
-    .main__section__p {
+    
+    &__p {
         display: flex;
         justify-content: center;
         max-width: 1080px;
@@ -321,20 +136,54 @@ a {
         color: white;
         font-size: 1.6em;
         font-family: 'Ubuntu Mono', monospace;
+    
+    }
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "footer__divh footer__diva"
+        ;
+
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1080px;
+
+    &__divh {
+        display: grid;
+        text-align: center;
+        align-self: center;
+        color: #ffffff;
+        grid-area: footer__divh;
+        font-family: 'Ubuntu Mono', monospace;
     }
 
-    .divdea {
+    &__diva {
         display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: center;
+        justify-content: space-between;
+        grid-area: footer__diva;
     }
 
+    &__gmail {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+}
+    }
+    
     .div {
         display: flex;
         max-width: 1080x;
         margin: 0 auto;
         flex-direction: row;
-
     }
-
+    
     .main__section__a {
         border: 2px solid #b8af37;
         text-decoration: none;
@@ -347,169 +196,104 @@ a {
         font-size: 1.3em;
         padding: .8rem;
         flex-basis: 10%;
-    }
-
-    .main__section__a:hover {
+    
+    &:hover {
         background-color: rgb(201, 204, 0);
         opacity: 75%;
     }
-
-    .main__form {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-    }
-
-    /*Footer
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "footer__divh footer__diva"
-        ;
-
-        padding: 20px;
-        margin: 0 auto;
-        max-width: 1080px;
-    }
-
-    .footer__divh {
-        display: grid;
-        text-align: center;
-        align-self: center;
-        color: #ffffff;
-        grid-area: footer__divh;
-        font-family: 'Ubuntu Mono', monospace;
-    }
-
-    .footer__diva {
-        display: flex;
-        flex-direction: row;
-        justify-self: center;
-        align-self: center;
-        justify-content: space-between;
-        grid-area: footer__diva;
-    }
-
-    .footer__gmail {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
     }
 }
 
-
 @media screen and (max-width: 1024px) {
-
-    /*Header
     .bg-light {
         --bs-bg-opacity: 1;
         background-color: rgb(201, 204, 0) !important;
     }
-
+    
     .container-fluid {
         max-width: 1080px;
     }
-
+    
     #navbarNav {
         justify-content: end;
     }
-
+    
     .header {
         background-color: rgb(201, 204, 0);
         padding: 20px;
         height: 125px;
         margin: 0%;
         font-size: 1em;
-    }
-
-    .header__nav {
+    
+    &__nav {
         max-width: 1080px;
         margin: 0 auto;
         align-items: center;
         display: flex;
         justify-content: space-between;
+    
+        &__logo {
+         display: flex;
+         justify-content: left;
+         flex-basis: 25%;
+    }
+    
+        &__ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-basis: 50%;
+         font-family: 'Ubuntu Mono', monospace;
+    }
+    
+    }
     }
 
-    .header__nav__logo {
-        display: flex;
-        justify-content: left;
-        flex-basis: 25%;
-    }
-
-    .header__nav__ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-basis: 50%;
-        font-family: 'Ubuntu Mono', monospace;
-    }
-
-    /*Main
     .main {
         height: 75vh;
         display: flex;
         padding: 20px;
-    }
-
-    .main--contacto {
-        justify-content: center;
-        justify-content: space-around;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .main__section--contacto {
-        display: flex;
-        flex-direction: column;
-        max-width: 1080px;
-        margin: 0 auto;
-    }
-
-    .main__section {
+    
+    
+    &__section {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         max-width: 1080px;
         margin: 0 auto;
-    }
-
-    .main__section__h1 {
+    
+    &__h1 {
         display: flex;
         max-width: 1080px;
         margin: 0 auto;
         color: white;
-        font-size: 1.6em;
+        font-size: 1.8em;
         font-family: 'Ubuntu Mono', monospace;
+    
+    
     }
-
-    .main__section__p {
+    
+    &__p {
         display: flex;
         justify-content: center;
         max-width: 1080px;
         margin: 0 auto;
         text-align: justify;
         color: white;
-        font-size: 1.4em;
+        font-size: 1.6em;
         font-family: 'Ubuntu Mono', monospace;
+    
     }
-
-    .divdea {
-        display: flex;
     }
-
+    }
+    
     .div {
         display: flex;
         max-width: 1080x;
         margin: 0 auto;
         flex-direction: row;
-
     }
-
+    
     .main__section__a {
         border: 2px solid #b8af37;
         text-decoration: none;
@@ -522,21 +306,12 @@ a {
         font-size: 1.3em;
         padding: .8rem;
         flex-basis: 10%;
-    }
-
-    .main__section__a:hover {
+    
+    &:hover {
         background-color: rgb(201, 204, 0);
         opacity: 75%;
     }
-
-    .main__form {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
     }
-
-    /*Footer
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -548,9 +323,8 @@ a {
         padding: 20px;
         margin: 0 auto;
         max-width: 1080px;
-    }
 
-    .footer__divh {
+    &__divh {
         display: grid;
         text-align: center;
         align-self: center;
@@ -559,7 +333,7 @@ a {
         font-family: 'Ubuntu Mono', monospace;
     }
 
-    .footer__diva {
+    &__diva {
         display: flex;
         flex-direction: row;
         justify-self: center;
@@ -568,23 +342,30 @@ a {
         grid-area: footer__diva;
     }
 
-    .footer__gmail {
+    &__gmail {
         display: flex;
         flex-direction: row;
         align-self: center;
     }
 }
+}
+
 
 @media screen and (max-width: 768px) {
+    .body {
+        width: auto;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     .main__section {
         font-size: .8rem;
     }
-
-    .main__section--contacto {
-        font-size: .8rem;
-    }
-
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -596,9 +377,8 @@ a {
         padding: 20px;
         margin: 0 auto;
         max-width: 1080px;
-    }
 
-    .footer__divh {
+    &__divh {
         display: grid;
         text-align: center;
         align-self: center;
@@ -607,7 +387,7 @@ a {
         font-family: 'Ubuntu Mono', monospace;
     }
 
-    .footer__diva {
+    &__diva {
         display: flex;
         flex-direction: row;
         justify-self: center;
@@ -616,22 +396,29 @@ a {
         grid-area: footer__diva;
     }
 
-    .footer__gmail {
+    &__gmail {
         display: flex;
         flex-direction: row;
         align-self: center;
     }
+}  
 }
 
 @media screen and (max-width: 600px) {
+    .body {
+        width: auto;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
     .main__section {
         font-size: .8rem;
     }
-
-    .main__section--contacto {
-        font-size: .8rem;
-    }
-
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -643,9 +430,8 @@ a {
         padding: 20px;
         margin: 0 auto;
         max-width: 1080px;
-    }
 
-    .footer__divh {
+    &__divh {
         display: grid;
         text-align: center;
         align-self: center;
@@ -654,7 +440,7 @@ a {
         font-family: 'Ubuntu Mono', monospace;
     }
 
-    .footer__diva {
+    &__diva {
         display: flex;
         flex-direction: row;
         justify-self: center;
@@ -663,30 +449,30 @@ a {
         grid-area: footer__diva;
     }
 
-    .footer__gmail {
+    &__gmail {
         display: flex;
         flex-direction: row;
         align-self: center;
     }
 }
+  
+}
 
 @media screen and (max-width: 480px) {
+    .body {
+        width: auto;
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     .main__section {
         font-size: .8rem;
     }
-
-    .main__section--contacto {
-        font-size: .8rem;
-    }
-
-    .main__form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: baseline;
-    }
-
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -698,9 +484,8 @@ a {
         padding: 20px;
         margin: 0 auto;
         max-width: 1080px;
-    }
 
-    .footer__divh {
+    &__divh {
         display: grid;
         text-align: center;
         align-self: center;
@@ -709,7 +494,7 @@ a {
         font-family: 'Ubuntu Mono', monospace;
     }
 
-    .footer__diva {
+    &__diva {
         display: flex;
         flex-direction: row;
         justify-self: center;
@@ -718,12 +503,12 @@ a {
         grid-area: footer__diva;
     }
 
-    .footer__gmail {
+    &__gmail {
         display: flex;
         flex-direction: row;
         align-self: center;
     }
-
+}
 }
 
 @media screen and (max-width: 320px) {
@@ -741,11 +526,6 @@ a {
     .main__section {
         font-size: .6rem;
     }
-
-    .main__section--contacto {
-        font-size: .6rem;
-    }
-
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -757,9 +537,8 @@ a {
         padding: 20px;
         margin: 0 auto;
         max-width: 1080px;
-    }
 
-    .footer__divh {
+    &__divh {
         display: grid;
         text-align: center;
         align-self: center;
@@ -768,7 +547,7 @@ a {
         font-family: 'Ubuntu Mono', monospace;
     }
 
-    .footer__diva {
+    &__diva {
         display: flex;
         flex-direction: row;
         justify-self: center;
@@ -777,11 +556,11 @@ a {
         grid-area: footer__diva;
     }
 
-    .footer__gmail {
+    &__gmail {
         display: flex;
         flex-direction: row;
         align-self: center;
     }
-
 }
-*/
+  
+}
