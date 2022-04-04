@@ -11,12 +11,12 @@ html {
     font-size: 62, 5%;
 }
 
-/*Variables
+Variables
 :root {
     --principal: rgb(201, 204, 0);
 }
 
-/*Globales
+Globales
 
 .body {
     width: auto;
@@ -43,7 +43,7 @@ a {
     text-decoration: none;
 }
 
-/*Header
+Header
 .bg-light {
     --bs-bg-opacity: 1;
     background-color: rgb(201, 204, 0) !important;
@@ -86,11 +86,11 @@ a {
     justify-content: space-evenly;
     flex-basis: 50%;
     font-family: 'Ubuntu Mono', monospace;
-}*/
+}
 
 
 
-/*Main
+Main
 .main {
     height: 75vh;
     display: flex;
@@ -784,4 +784,3 @@ a {
     }
 
 }
-*/
