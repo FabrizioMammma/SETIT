@@ -1,3 +1,14 @@
 /*Variables*/
 
-$principal: rgb(201, 204, 0);
+$font-size: (x-large: 1.8em,
+    large: 1.6em,
+    medium: 1.3em,
+    small: 0.8em,
+    x-small: 0.6em);
+
+@each $asignation,
+$value in $font-size {
+    .ws--#{$asignation} {
+        font-size: $value;
+    }
+}

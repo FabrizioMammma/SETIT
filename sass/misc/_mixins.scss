@@ -1,0 +1,6 @@
+@mixin flex ($direction:row, $justify-content:space-evenly, $max-width:1080px, $margin:0 auto, ) {
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    max-width: $max-width;
+    margin: $margin;
+}
