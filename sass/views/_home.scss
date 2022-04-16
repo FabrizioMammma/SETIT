@@ -7,14 +7,7 @@
     &__section {
         display: flex;
         @include flex(row, space-evenly, 1080px, 0 auto);
-
-        &__h1 {
-            display: flex;
-            @include flex(1080px, 0 auto);
-            font-size: map-get($font-size, ws--x-large);
-            font-weight: 600;
-            font-family:'Dosis', sans-serif !important;
-        }
+        font-family: 'Dosis', sans-serif;
     }
 }
 .imgini{

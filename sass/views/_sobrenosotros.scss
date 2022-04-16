@@ -11,30 +11,18 @@
         max-width: 1080px;
         margin: 0 auto;
 
-        &__h1 {
-            display: flex;
-            max-width: 1080px;
-            margin: 0 auto;
-            color: white;
-            font-size: 1.8em;
-            font-family: 'Ubuntu Mono', monospace;
-
-
-        }
-
         &__p {
-            display: flex;
-            justify-content: center;
-            max-width: 1080px;
-            margin: 0 auto;
-            text-align: justify;
-            color: white;
-            font-size: 1.6em;
-            font-family: 'Ubuntu Mono', monospace;
+                display: flex;
+                @include flex(1080px, 0 auto);
+                font-size: map-get($font-size, ws--x-large);
+                font-weight: 300;
+                font-family:'Dosis', sans-serif !important;
+            }
+
 
         }
     }
-}
+
     .main__section__a { 
         justify-content: left;
         height: 40px;
