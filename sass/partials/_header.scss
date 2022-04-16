@@ -1,6 +1,6 @@
 .bg-light {
-    --bs-bg-opacity: 1;
-    background-color: rgb(201, 204, 0) !important;
+    --bs-bg-opacity: none;
+    background-color:rgb(255, 255, 255)!important;
 }
 
 .container-fluid {
@@ -12,7 +12,7 @@
 }
 
 .header {
-    background-color: rgb(201, 204, 0);
+    background-color: none;
     padding: 20px;
     height: 125px;
     margin: 0%;
