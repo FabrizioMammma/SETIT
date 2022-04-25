@@ -1,36 +1,32 @@
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "footer__divh footer__diva"
-    ;
+padding: 30px;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-between;
 
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1080px;
 
-    &__divh {
-        display: grid;
-        text-align: center;
-        align-self: center;
-        color: #ffffff;
-        grid-area: footer__divh;
-        font-family: 'Ubuntu Mono', monospace;
-    }
+&__diva{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 10%;
+    justify-content: space-evenly;
 
-    &__diva {
-        display: flex;
-        flex-direction: row;
-        justify-self: center;
-        align-self: center;
-        justify-content: space-between;
-        grid-area: footer__diva;
-    }
-
-    &__gmail {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-    }
 }
+&__divh{
+    display: flex;
+    flex-basis: 55%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+}
+
+.h4, h4{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 800;
+    font-family: 'Dosis', sans-serif;
+}
+ 
+
