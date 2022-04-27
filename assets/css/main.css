@@ -1696,7 +1696,7 @@ a {
 .carousel-inner {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 1080px;
   margin: 0 auto; }
 
@@ -1781,7 +1781,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
@@ -1837,7 +1837,7 @@ a {
   .container-fluid {
     max-width: 1080px; }
   .main {
-    height: 70vh;
+    height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column; }
@@ -1859,7 +1859,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
@@ -1937,7 +1937,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
@@ -2015,7 +2015,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
@@ -2093,7 +2093,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
@@ -2171,7 +2171,7 @@ a {
   .carousel-inner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1080px;
     margin: 0 auto; }
   .carousel-item {
